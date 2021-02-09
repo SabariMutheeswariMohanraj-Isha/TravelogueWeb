@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Travelogue Voyagers </title>
-    <link rel="icon" href="downfiles/fav_icon.png" type="image/icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
+<head>
+  <meta charset="utf-8">
+  <title> Travelogue Voyagers </title>
+  <link rel="icon" href="downfiles/fav_icon.png" type="image/icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-a">
       <div class="navbar">
         <nav>
-            <<ul>
-              <li><a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">HOME</a>></li>
-              <li><a href="https://www.google.com/maps/place/Yosemite+Falls/@37.7565999,-119.5990961,17z/data=!3m1!4b1!4m5!3m4!1s0x8096f1fb4d25adeb:0xca05cbdf2d93d1b8!8m2!3d37.7565957!4d-119.5969074">LOCATION</a></li>
-              <li><a href="https://en.wikipedia.org/wiki/Travelogue">ABOUT</a></li>
-              <li><a href="downfiles/Travelogue_Contact.vcf"> CONTACT US </a>></li>
-            </ul>>
+          <ul>
+            <li><a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">HOME</a></li>
+            <li><a href="https://www.google.com/maps/place/Yosemite+Falls/@37.7565999,-119.5990961,17z/data=!3m1!4b1!4m5!3m4!1s0x8096f1fb4d25adeb:0xca05cbdf2d93d1b8!8m2!3d37.7565957!4d-119.5969074">LOCATION</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Travelogue">ABOUT</a></li>
+            <li><a href="downfiles/Travelogue_Contact.vcf"> CONTACT US</a></li>
+          </ul>
         </nav>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div class="row-a">
+        <div class="col-a">
           <h1>Travelogue</h1>
           <p>Welcome to the world's most famous tourism guide site.<br>
             Search for any loction all over the world and explore the most intersting facts along with all the necessary information to make a vacation to your most favorite places to vist around.
           </p>
-          <button class="button button" onclick="nextpage()">EXPLORE MORE</button>
+          <button class="button button" onclick="scrollDown()">EXPLORE MORE</button>
           <script>
-function nextpage() {
-  window.open("https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/")
-}
-</script>
-        </div>
+          function scrollDown() {
+            document.body.scrollTop = 2500;
+            document.documentElement.scrollTop = 2500;
+          }
+        </script>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="container-b">
+    <div class="row-b">
+      <div class="col-b">
+        <h1>Travelogue</h1>
+        <p>Welcome to the world's most famous tourism guide site.<br>
+          Search for any loction all over the world and explore the most intersting facts along with all the necessary information to make a vacation to your most favorite places to vist around.
+        </p>
+        <button class="button button" onclick="scrollup()">EXPLORE MORE</button>
+        <script>
+        function scrollup() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+      </div>
+    </div>
+
+  </div>
+</body>
 </html>
