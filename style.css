@@ -1,22 +1,26 @@
 *{
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
 }
 .container-a{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(imgs/ingleton_waterfall_yorkshire_england.jpg);
+    background-image:url(imgs/london-3.jpg);
     background-position: center;
     background-size: cover;
+    background-blend-mode: darken;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
 }
+
 .container-b{
+    margin:auto;
+    background: radial-gradient(114.52% 200.78% at -12.94% -13.35%, #E0E0E0 0%, #FFFFFF 49.41%, #E0E0E0 95.31%);
     width: 100%;
     height: 100vh;
-    background-color: black;
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -36,11 +40,11 @@ html{
     align-items: center;
     position: fixed;
 }
+
 nav{
   flex: 1;
   text-align: right;
 }
-
 
 nav ul li{
   list-style: none;
@@ -49,7 +53,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: rgb(255,255,255);
+  color: black;
   font-size: 13px;
 }
 .row-a{
@@ -57,6 +61,7 @@ nav ul li a{
   height: 88%;
   align-items:center;
 }
+
 .row-b{
   display: flex;
   height: 100%;
@@ -73,23 +78,27 @@ nav ul li a{
 
 
 h1{
-  color: rgb(255, 255, 255);
+  color:white ;
   font-size: 100px;
+  letter-spacing: 5px;
 }
 p{
-  color: rgba(255, 255, 255,0.7);
+  color:white;
   font-size: 15px;
   line-height: 19px;
   letter-spacing: 2px;
+  word-spacing: 3px;
+
 
 }
-button{
+.button1{
   width: 180px;
   color:#000;
   font-size: 12px;
+  letter-spacing: 2px;
   padding:12px 0;
   background: #fff;
-  border: 2px solid rgba(0,0,0,0.91);
+  border: 2px solid rgb(255,255,255);
   border-radius: 20px;
   outline: none;
   margin-top: 30px;
@@ -102,4 +111,74 @@ button{
   background-color:rgba(0,0,0,0.2);
   color : white;
   border: 2px solid white;
+}
+
+.column {
+  float: left;
+  width: 24%;
+  padding: 0 3px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 185px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  background: white;
+}
+
+
+
+.subcontainer{
+  height: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+#cardTitle
+{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.2em;
+text-transform: lowercase;
+}
+
+#cardDesc
+{
+color: #242424;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: lowercase;
+}
+
+#gradient-b
+{
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
 }
