@@ -7,54 +7,94 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</script>
 </head>
 <body>
-    <div class="container-a">
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li><a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">HOME</a></li>
-            <li><a href="https://www.google.com/maps/place/Yosemite+Falls/@37.7565999,-119.5990961,17z/data=!3m1!4b1!4m5!3m4!1s0x8096f1fb4d25adeb:0xca05cbdf2d93d1b8!8m2!3d37.7565957!4d-119.5969074">LOCATION</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Travelogue">ABOUT</a></li>
-            <li><a href="downfiles/Travelogue_Contact.vcf"> CONTACT US</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="container-a">
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li > <a onclick="scrollUp()">HOME</a></li>
+          <li><a href="https://www.google.com/maps/place/Yosemite+Falls/@37.7565999,-119.5990961,17z/data=!3m1!4b1!4m5!3m4!1s0x8096f1fb4d25adeb:0xca05cbdf2d93d1b8!8m2!3d37.7565957!4d-119.5969074">LOCATION</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Travelogue">ABOUT</a></li>
+          <li><a href="downfiles/Tavelogue-Voyagers.vcf"> CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+    function scrollUp() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
-      <div class="row-a">
-        <div class="col-a">
-          <h1>Travelogue</h1>
-          <p>Welcome to the world's most famous tourism guide site.<br>
-            Search for any loction all over the world and explore the most intersting facts along with all the necessary information to make a vacation to your most favorite places to vist around.
-          </p>
-          <button class="button button" onclick="scrollDown()">EXPLORE MORE</button>
-          <script>
-          function scrollDown() {
-            document.body.scrollTop = 2500;
-            document.documentElement.scrollTop = 2500;
-          }
+    <div class="row-a">
+      <div class="col-a" style="margin: 20px;">
+        <h1>Travelogue</h1>
+        <br>
+        <p>Welcome to the world's most famous tourism guide site.<br><br>
+          Search any loction all over the world and explore the most interesting facts along with all the necessary information to make a vacation to your most favorite places to vist around.<br><br>
+          Whether you prefer a rustic retreat or a five-star hotel, we've got you covered.
+        </p>
+        <button class="button button1" onclick="scrollDown()">EXPLORE MORE</button>
+        <script>
+        function scrollDown() {
+          document.body.scrollTop = 2500;
+          document.documentElement.scrollTop = 2500;
+        }
         </script>
       </div>
     </div>
   </div>
 
   <div class="container-b">
-    <div class="row-b">
-      <div class="col-b">
-        <h1>Travelogue</h1>
-        <p>Welcome to the world's most famous tourism guide site.<br>
-          Search for any loction all over the world and explore the most intersting facts along with all the necessary information to make a vacation to your most favorite places to vist around.
-        </p>
-        <button class="button button" onclick="scrollup()">EXPLORE MORE</button>
-        <script>
-        function scrollup() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="imgs/brazil.jpg" alt="card1" style="height: 320px; width: 300px; border-radius: 15px 15px 0 0;object-fit: cover;">
+          <div class="subcontainer">
+            <h3 id="cardTitle">rio de janeiro</h3>
+            <br>
+            <p id="cardDesc">party your heart at the cabana coast</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="imgs/fuji.jpg" alt="card2" style="height: 320px; width: 300px; border-radius: 15px 15px 0 0;object-fit: cover;">
+          <div class="subcontainer">
+            <h3 id="cardTitle">kyoto</h3>
+            <br>
+            <p id="cardDesc">cherish in the beauty of berry blossoms</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="imgs/aurora.jpg" alt="card3" style="height: 320px; width: 300px; border-radius: 15px 15px 0 0;">
+          <div class="subcontainer">
+            <h3 id="cardTitle">oslo</h3>
+            <br>
+            <p id="cardDesc">immerse yourself<br>in the nightly glow</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="imgs/Amsterdam.jpg" alt="card4" style="height: 320px; width: 300px; border-radius: 15px 15px 0 0; object-fit: cover;">
+          <div class="subcontainer">
+            <h3 id="cardTitle">amsterdam</h3>
+            <br>
+            <p id="cardDesc">baste in the glory<br> of urban love</p>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
-
   </div>
+</div>
 </body>
 </html>
